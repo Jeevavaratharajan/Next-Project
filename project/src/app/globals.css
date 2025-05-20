@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+.SmallBold{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: regular;
+}
+body {
+  background-color: white;
+}
