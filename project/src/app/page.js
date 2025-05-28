@@ -3,7 +3,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { IoHome } from "react-icons/io5";
 import { GrFormNextLink } from "react-icons/gr";
-const page = () => {
+import { useRouter } from "next/navigation";
+const Page = () => {
   const images = [
     "/image/image1.jpg",
     "/image/image2.jpg",
@@ -20,6 +21,9 @@ const page = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
+  const router = useRouter();
+  const GoAbout = ()=>{router.push("/about")}
+
   return (
     <div>
       <div className=" flex flex-col">
@@ -28,7 +32,7 @@ const page = () => {
         <div className="flex flex-col justify-center items-center mt-0.5">
           <div className="relative overflow-hidden max-h-[550px] ">
             <div
-              className="flex transition-transform duration-1500"
+              className="flex transition-transform duration-1000 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {images.map((image, index) => (
@@ -73,28 +77,28 @@ const page = () => {
                 <div className="snap-start group w-36">
                   <div className="group-hover:bg-blue-50 bg-[#0f3963] rounded-[20px] border-2 border-blue-600/50 relative p-4 justify-items-center w-full ">
                     <IoHome className="group-hover:text-[#0f3963] text-blue-50 size-6 sm:size-18 " />
-                    <h4 className="text-2xl group-hover:text-[#0f3963] text-blue-50 leading-6 font-bold mt-4">1BHK</h4>
+                    <h4 className="text-2xl group-hover:text-[#0f3963] text-blue-50 leading-6 font-bold mt-4">2BHK</h4>
                   </div>
                 </div>
 
                 <div className="snap-start group w-36">
                   <div className="group-hover:bg-blue-50 bg-[#0f3963] rounded-[20px] border-2 border-blue-600/50 relative p-4 justify-items-center w-full ">
                     <IoHome className="group-hover:text-[#0f3963] text-blue-50 size-6 sm:size-18 " />
-                    <h4 className="text-2xl group-hover:text-[#0f3963] text-blue-50 leading-6 font-bold mt-4">1BHK</h4>
+                    <h4 className="text-2xl group-hover:text-[#0f3963] text-blue-50 leading-6 font-bold mt-4">3BHK</h4>
                   </div>
                 </div>
 
                 <div className="snap-start group w-36">
                   <div className="group-hover:bg-blue-50 bg-[#0f3963] rounded-[20px] border-2 border-blue-600/50 relative p-4 justify-items-center w-full ">
                     <IoHome className="group-hover:text-[#0f3963] text-blue-50 size-6 sm:size-18 " />
-                    <h4 className="text-2xl group-hover:text-[#0f3963] text-blue-50 leading-6 font-bold mt-4">1BHK</h4>
+                    <h4 className="text-2xl group-hover:text-[#0f3963] text-blue-50 leading-6 font-bold mt-4">Studio</h4>
                   </div>
                 </div>
 
                 <div className="snap-start group w-36">
                   <div className="group-hover:bg-blue-50 bg-[#0f3963] rounded-[20px] border-2 border-blue-600/50 relative p-4 justify-items-center w-full ">
                     <IoHome className="group-hover:text-[#0f3963] text-blue-50 size-6 sm:size-18 " />
-                    <h4 className="text-2xl group-hover:text-[#0f3963] text-blue-50 leading-6 font-bold mt-4">1BHK</h4>
+                    <h4 className="text-2xl group-hover:text-[#0f3963] text-blue-50 leading-6 font-bold mt-4">villa</h4>
                   </div>
                 </div>
 
@@ -139,7 +143,7 @@ const page = () => {
                 </p>
               </div>
               <div className="w-full decoration-0  items-center">
-                  <a className="text-blue-500 hover:text-blue-600 text-[12px] sm:text-[1.5vw]">Learn more about us
+                  <a className="text-blue-500 hover:text-blue-600 text-[12px] sm:text-[1.5vw]"onClick={GoAbout}>Learn more about us
                     <span className="ml-2">&#8594;</span>
                   </a>
               </div>  
@@ -170,7 +174,7 @@ const page = () => {
 
                 <div className="col-span-12 md:col-span-3 ">
                   <div className="bg-blue-50  rounded-[20px] hover:border-2 border-blue-600/50 relative p-4 ">
-                    <img  src="https://cdn.easyfrontend.com/pictures/featured/featured_13_1.png"  alt="" className="h-auto max-w-full rounded-xl mx-auto mb-6"/>
+                    <img  src="https://cdn.easyfrontend.com/pictures/featured/featured_13_1.png"  alt="image" className="h-auto max-w-full rounded-xl mx-auto mb-6"/>
                     <h4 className="text-2xl text-[#0f3963] leading-6 font-bold mb-4">Product Design</h4>
                     <p className="opacity-70 text-[#0f3963]">
                       Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
@@ -180,7 +184,7 @@ const page = () => {
 
                 <div className="col-span-12 md:col-span-3 ">
                   <div className="bg-blue-50  rounded-[20px] hover:border-2 border-blue-600/50 relative p-4 ">
-                    <img  src="https://cdn.easyfrontend.com/pictures/featured/featured_13_1.png"  alt="" className="h-auto max-w-full rounded-xl mx-auto mb-6"/>
+                    <img  src="https://cdn.easyfrontend.com/pictures/featured/featured_13_1.png"  alt="image" className="h-auto max-w-full rounded-xl mx-auto mb-6"/>
                     <h4 className="text-2xl text-[#0f3963] leading-6 font-bold mb-4">Product Design</h4>
                     <p className="opacity-70 text-[#0f3963]">
                       Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
@@ -190,7 +194,7 @@ const page = () => {
 
                 <div className="col-span-12 md:col-span-3 ">
                   <div className="bg-blue-50  rounded-[20px] hover:border-2 border-blue-600/50 relative p-4 ">
-                    <img  src="https://cdn.easyfrontend.com/pictures/featured/featured_13_1.png"  alt="" className="h-auto max-w-full rounded-xl mx-auto mb-6"/>
+                    <img  src="https://cdn.easyfrontend.com/pictures/featured/featured_13_1.png"  alt="image" className="h-auto max-w-full rounded-xl mx-auto mb-6"/>
                     <h4 className="text-2xl text-[#0f3963] leading-6 font-bold mb-4">Product Design</h4>
                     <p className="opacity-70 text-[#0f3963]">
                       Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
@@ -200,7 +204,7 @@ const page = () => {
 
                 <div className="col-span-12 md:col-span-3 ">
                   <div className="bg-blue-50  rounded-[20px] hover:border-2 border-blue-600/50 relative p-4 ">
-                    <img  src="https://cdn.easyfrontend.com/pictures/featured/featured_13_1.png"  alt="" className="h-auto max-w-full rounded-xl mx-auto mb-6"/>
+                    <img  src="https://cdn.easyfrontend.com/pictures/featured/featured_13_1.png"  alt="image" className="h-auto max-w-full rounded-xl mx-auto mb-6"/>
                     <h4 className="text-2xl text-[#0f3963] leading-6 font-bold mb-4">Product Design</h4>
                     <p className="opacity-70 text-[#0f3963]">
                       Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis eligendi qui.
@@ -318,4 +322,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

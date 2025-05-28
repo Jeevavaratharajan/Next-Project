@@ -2,6 +2,7 @@ import Footer from '@/components/Footer/footer';
 import React from 'react'
 
 const About = () => {
+
   return (
     <div>
 
@@ -56,7 +57,7 @@ const About = () => {
           Our Best Features
         </h2>
         <p className="text-center text-sm text-gray-600 mx-auto sm:text-base lg:text-lg">
-          Seamless property buying, selling, and renting with verified listings and expert insights all in one place!
+          Seamless property buying, selling, and renting with verified listings and expert insights all in one place!
         </p>
       </div>
   
