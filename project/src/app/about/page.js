@@ -5,8 +5,23 @@ const About = () => {
   return (
     <div>
 
+      <section
+  className=" max-h-[500px] light py-32 md:py-52 text-white bg-cover bg-center bg-no-repeat relative"
+  style={{ backgroundImage: "url('https://cdn.easyfrontend.com/pictures/hero/hero_30.png')"}}
+>
+  <div className=" px-4 mx-auto">
+    <div className="md:max-w-5xl mx-auto flex justify-center items-center text-center">
+      <div>
+        <h1 className="text-2xl font-bold leading-tight  md:text-[62px] mb-2">
+          We're offering Some useful Course Materials
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
      
-       <section className="bg-white px-4 py-8 sm:px-6 md:px-16">
+   <section className="bg-white px-4 py-8 sm:px-6 md:px-16">
     <div
       className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16"
     >
@@ -20,7 +35,7 @@ const About = () => {
       </div>
       
       <div className="w-full md:w-1/2">
-        <h2 className="text-2xl font-bold text-gray-800 sm:text-3xl">
+        <h2 className="text-2xl font-bold text-[#0f3963] sm:text-3xl">
           About Us
         </h2>
         <p className="text-gray-600 mt-4 font-sans text-base font-medium sm:text-xl">
@@ -37,7 +52,7 @@ const About = () => {
   <div className="bg-blue-50 px-4 sm:px-8 lg:px-32 py-12 sm:py-16">
     <div className="container mx-auto">
       <div className="mb-12">
-        <h2 className="text-center text-2xl font-bold text-gray-800 sm:text-3xl lg:text-5xl mb-4">
+        <h2 className="text-center text-2xl font-bold text-[#0f3963] sm:text-3xl lg:text-5xl mb-4">
           Our Best Features
         </h2>
         <p className="text-center text-sm text-gray-600 mx-auto sm:text-base lg:text-lg">
@@ -109,13 +124,10 @@ const About = () => {
       </div>
     </div>
   </div>
-  
 
- <app-bandeau-info/>
-
-<section className="bg-indigo-50 border-y border-indigo-100 py-16">
+<section className="bg-indigo-50/50 border-y border-indigo-100 py-16">
   <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-extrabold text-gray-900 text-center">Our Mission , Vision & Values</h2>
+    <h2 className="text-3xl font-extrabold text-[#0f3963] text-center">Our Mission , Vision & Values</h2>
     
     <div className="mt-12  justify-stretch grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       
@@ -172,7 +184,6 @@ const About = () => {
     </div>
   </div>
 </section>
-        <Footer/>
     </div>
   )
 }

@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
       {/* <!-- Get In Touch --> */}
-      <div className="footer-section" data-aos="zoom-out-left">
+      <div className="footer-section justify-items-center" data-aos="zoom-out-left">
         <h5 className="text-white text-lg md:text-xl font-semibold mb-6 hover:text-primary transition duration-300">
           Get In Touch
         </h5>
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       {/* <!-- Quick Links --> */}
-      <div className="footer-section" data-aos="fade-up">
+      <div className="footer-section justify-items-center" data-aos="fade-up">
         <h5 className="text-white text-lg md:text-xl font-semibold text-center mb-6 hover:text-primary transition duration-300">
           Quick Links
         </h5>
@@ -88,7 +88,7 @@ const Footer = () => {
        
       <p>
         Designed by
-        <a className="text-primary hover:underline"  target="_blank" rel="noopener noreferrer" >v2max</a>
+        <a className="text-primary hover:underline"  target="_blank" rel="noopener noreferrer"> v2max</a> 
       </p>
       
       <p>&copy; All Rights Reserved.</p>

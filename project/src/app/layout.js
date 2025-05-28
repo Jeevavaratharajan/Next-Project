@@ -1,5 +1,6 @@
 import Header from "@/components/Header/header";
 import "./globals.css";
+import Footer from "@/components/Footer/footer";
 
 const RootLayout = ({ children }) => {
   return (
@@ -7,6 +8,7 @@ const RootLayout = ({ children }) => {
       <body>
         <Header />
         <main>{children}</main>
+        <Footer/>
       </body>
     </html>
   );
