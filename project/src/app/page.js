@@ -29,7 +29,7 @@ const Page = () => {
       <div className=" flex flex-col">
 
         {/* carsoul */}
-        <div className="flex flex-col justify-center items-center mt-0.5">
+        <div className="flex flex-col justify-center items-center">
           <div className="relative overflow-hidden max-h-[550px] ">
             <div
               className="flex transition-transform duration-1000 ease-in-out"
@@ -102,12 +102,6 @@ const Page = () => {
                   </div>
                 </div>
 
-                <div className="snap-start group w-36">
-                  <div className="group-hover:bg-blue-50 bg-[#0f3963] rounded-[20px] border-2 border-blue-600/50 relative p-4 justify-items-center w-full ">
-                    <IoHome className="group-hover:text-[#0f3963] text-blue-50 size-6 sm:size-18 " />
-                    <h4 className="text-2xl group-hover:text-[#0f3963] text-blue-50 leading-6 font-bold mt-4">1BHK</h4>
-                  </div>
-                </div>
 
               </div>
                 
