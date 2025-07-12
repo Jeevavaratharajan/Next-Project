@@ -3,7 +3,7 @@ import AdminDashboard from "@/components/adminDashboard/Dashboard";
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import ProductApi from "@/server/productApi/AddProductApi";
+import ProductApi from "@/server/productApi/ProductApi";
 
 const AddProperty = () => {
   const [Propertydata, setPropertyData] = useState({

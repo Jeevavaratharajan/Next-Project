@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { GiHouseKeys } from "react-icons/gi";
 import { IoMenu } from "react-icons/io5";
 import { useState} from "react";
@@ -47,20 +48,26 @@ const Header = () => {
                   drop ? "translate-x-0" : "translate-x-full"
                 }`}
               >
-                <div className=" flex flex-row justify-center items-center mt-1.5 h-[50px] "onClick={GoHome}>
+                <div className=" flex flex-row justify-center items-center mt-1.5 h-[50px] "
+                ><Link href={"/"} >
                   <h1 className="text-[20px] text-white hover:underline hover:decoration-white">
                     Home
                   </h1>
+                  </Link>
                 </div>
-                <div className="flex flex-row justify-center items-center  h-[50px] " onClick={GoAbout}>
+                <div className="flex flex-row justify-center items-center  h-[50px] " >
+                  <Link href={"/about"}>
                   <h1 className="text-[20px] text-white hover:underline hover:decoration-white">
                     About
                   </h1>
+                  </Link>
                 </div>
-                <div className="flex flex-row justify-center items-center  h-[50px]  " onClick={GoProperty}>
+                <div className="flex flex-row justify-center items-center  h-[50px]  " >
+                  <Link href={"/property"}>
                   <h1 className="text-[20px]  text-white hover:underline hover:decoration-white">
                     Properties
                   </h1>
+                  </Link>
                 </div>
                 <div className="flex flex-row justify-center items-center  h-[50px] mb-1.5  ">
                   <h1 className="text-[20px]  text-white hover:underline hover:decoration-white">
@@ -75,25 +82,27 @@ const Header = () => {
         <div className=" hidden sm:flex sm:w-4/7  sm:flex-row sm:justify-center sm:items-center pr-5  ">
           <div className="w-1/4 flex justify-center items-center">
 
-            <h2
+            <Link href={"/"}><h2
               className=" text-[20px] md:text-[23px] text-white hover:cursor-pointer hover:underline hover:decoration-white"
-              onClick={GoHome}
+            
             >
               Home
-            </h2>
+            </h2></Link>
           </div>
           <div className="w-1/4 flex justify-center items-center">
+          <Link href={"/about"}>
             <h2
               className=" text-[20px] md:text-[23px] text-white hover:cursor-pointer hover:underline hover:decoration-white"
-              onClick={GoAbout}
+              
             >
               About
-            </h2>
+            </h2></Link>
           </div>
           <div className="w-1/4 flex justify-center items-center">
-            <h2 className=" text-[20px] md:text-[23px] text-white hover:cursor-pointer hover:underline hover:decoration-white" onClick={GoProperty}>
+          <Link href={"/property"}>
+            <h2 className=" text-[20px] md:text-[23px] text-white hover:cursor-pointer hover:underline hover:decoration-white">
               Properties
-            </h2>
+            </h2></Link>
           </div>
           <div className="w-1/4 flex justify-center items-center">
             <h2 className="text-[20px] md:text-[23px] text-white hover:cursor-pointer hover:underline hover:decoration-white">
