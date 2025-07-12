@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -19,20 +20,24 @@ const AdminDashboard = () => {
           </h3>
         </div>
         <div className="h-[50px] sm:h-[80px] m-y-3 flex justify-center items-center hover:bg-[#375b7d]">
+          <Link href={"/adminAddProperty"}>
           <button
             className="text-[16px] sm:text-[22px] md:text-[24px] text-white font-semibold"
-            onClick={GoAddProperty}
+            
           >
             Add Property
           </button>
+          </Link>
         </div>
         <div className="h-[50px] sm:h-[80px] m-y-3 flex justify-center items-center hover:bg-[#375b7d]">
+          <Link href={"/adminPropertyList"}>
           <button
             className="text-[16px] sm:text-[22px] md:text-[24px] text-white"
-            onClick={GoProperties}
+     
           >
             Properties
           </button>
+          </Link>
         </div>
       </div>
     </div>
