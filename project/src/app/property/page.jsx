@@ -28,7 +28,7 @@ const Properties = () => {
         <Spinner />
       ) : (
         <div
-          className="h-[auto] sm:min-h-[800px] m-3 sm:m-6 rounded-t-[15px] sm:rounded-t-[20px] shadow-4xl"
+          className="min-h-[700px] m-3 sm:m-6 rounded-t-[15px] sm:rounded-t-[20px] shadow-4xl"
           style={{ boxShadow: "0 12px 50px rgba(0, 0, 0, 0.8)" }}
         >
           <div className=" h-[59px]  sm:h-[80px] bg-[#063970]  rounded-t-[15px] sm:rounded-t-[20px] pl-[40px] sm:pl-[70px]">
@@ -46,7 +46,7 @@ const Properties = () => {
                     >
                       <Link href={`/propertyDetail/${product._id}`}>
                         <div className="h-full w-full flex flex-row gap-1 max-[400px]:flex-col ">
-                          {/* Image Section */}
+ 
                           <div
                             className="w-[310px]  shadow-md max-[350px]:w-full h-auto "
                             style={{
@@ -60,9 +60,9 @@ const Properties = () => {
                             />
                           </div>
 
-                          {/* Text Section */}
+
                           <div className="w-[360px] sm:w-[400px] flex flex-col justify-between text-[14px] text-gray-500 border-[1px] border-[#063970] rounded-lg p-3 overflow-hidden bg-gradient-to-br from-white via-blue-50 to-white max-[400px]:w-full max-[400px]:text-[12px] max-[400px]:p-2">
-                            {/* Property Name */}
+           
                             <div className="flex">
                               <span className="w-[40%] text-right font-semibold text-[#063970] pr-2 max-[400px]:text-[12px]">
                                 Property:
@@ -73,8 +73,6 @@ const Properties = () => {
                                 )}
                               </span>
                             </div>
-
-                            {/* Location */}
                             <div className="flex">
                               <span className="w-[40%] text-right font-semibold text-[#063970] pr-2 max-[400px]:text-[12px]">
                                 Location:
@@ -85,8 +83,6 @@ const Properties = () => {
                                 )}
                               </span>
                             </div>
-
-                            {/* Type */}
                             <div className="flex">
                               <span className="w-[40%] text-right font-semibold text-[#063970] pr-2 max-[400px]:text-[12px]">
                                 Type:
@@ -107,18 +103,6 @@ const Properties = () => {
                                 )}
                               </span>
                             </div>
-
-                            {/* Description */}
-                            {/* <div className="flex h-[50%] ">
-                            <span className="w-[40%] text-right font-semibold text-[#063970] pr-2 max-[400px]:text-[12px]">
-                              Description:
-                            </span>
-                            <span className="w-[60%] text-gray-900 break-words overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 ">
-                              {product.Description || (
-                                <span className="text-gray-400">N/A</span>
-                              )}
-                            </span>
-                          </div> */}
                           </div>
                         </div>
                       </Link>
@@ -192,17 +176,6 @@ const Properties = () => {
                                 )}
                               </div>
                             </div>
-
-                            {/* <div className="h-[40%] flex flex-row ">
-                            <div className="h-full w-[40%] flex font-semibold text-[#063970] justify-end items-start">
-                              Description :
-                            </div>
-                            <div className=" whitespace-pre-wrap  leading-tight h-full w-[60%]  flex overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 justify-start items-start pl-[8px]  text-[15px] font-semibold">
-                              {product.Description || (
-                                <span className="text-gray-400">N/A</span>
-                              )}
-                            </div>
-                          </div> */}
                           </div>
                         </div>
                       </Link>

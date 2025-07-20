@@ -5,21 +5,15 @@ import React from "react";
 
 const AdminDashboard = () => {
   const router = useRouter();
-  const GoAddProperty = () => {
-    router.push("/adminAddProperty");
-  };
-  const GoProperties = () => {
-    router.push("/adminPropertyList");
-  };
+
   return (
-    <div>
-      <div className="h-screen bg-[#0f3963]">
-        <div className=" h-[70px] sm:h-[100px] flex justify-center items-center ">
+      <div className="h-screen bg-[#0f3963] ">
+        <div className=" h-[100px] sm:h-[100px] flex justify-center items-center ">
           <h3 className="font-semibold text-[17px] sm:text-[28px] md:text-[32px] text-[#f3961a] ">
             Dash Board
           </h3>
         </div>
-        <div className="h-[50px] sm:h-[80px] m-y-3 flex justify-center items-center hover:bg-[#375b7d]">
+        <div className="h-[60px] sm:h-[80px] m-y-3 flex justify-center items-center hover:bg-[#375b7d]">
           <Link href={"/adminAddProperty"}>
           <button
             className="text-[16px] sm:text-[22px] md:text-[24px] text-white font-semibold"
@@ -29,7 +23,7 @@ const AdminDashboard = () => {
           </button>
           </Link>
         </div>
-        <div className="h-[50px] sm:h-[80px] m-y-3 flex justify-center items-center hover:bg-[#375b7d]">
+        <div className="h-[60px] sm:h-[80px] m-y-3 flex justify-center items-center hover:bg-[#375b7d]">
           <Link href={"/adminPropertyList"}>
           <button
             className="text-[16px] sm:text-[22px] md:text-[24px] text-white"
@@ -40,7 +34,6 @@ const AdminDashboard = () => {
           </Link>
         </div>
       </div>
-    </div>
   );
 };
 

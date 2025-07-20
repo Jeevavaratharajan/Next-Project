@@ -23,7 +23,7 @@ const Header = () => {
   };
   return (
     
-      <div className=" w-full flex flex-row h-[60px] sm:h-[70px] lg:h-[75px] bg-[#05325c] relative mb-[0.5px] z-50">
+      <div className=" w-full flex flex-row h-[60px] sm:h-[70px] lg:h-[75px] bg-[#05325c] relative mb-[0.5px] z-20">
         <div className="w-1/2 flex justify-start items-center pl-[8%]">
           <span className=" flex justify-center items-center text-[#f3961a] mb-2">
             <GiHouseKeys className="text-4xl sm:text-5xl" />

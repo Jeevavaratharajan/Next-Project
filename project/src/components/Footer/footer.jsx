@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-     <footer className="bg-gray-50 z-50 relative" >
+     <footer className="bg-gray-50 z-20 relative" >
   <div className="bg-[#05325c] py-12 rounded-t-3xl text-gray-200 px-6 w-full lg:px-20">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
@@ -37,13 +37,11 @@ const Footer = () => {
         <div className="justify-items-center ">
           <ul className="text-sm space-y-3">
             <li >
-              <a  className="hover:text-primary text-center align-middle transition">About Us</a>
+              <a href="about" className="hover:text-primary text-center align-middle transition">About Us</a>
             </li>
+
             <li>
-              <a  className="hover:text-primary text-center align-middle transition">Contact Us</a>
-            </li>
-            <li>
-              <a  className="hover:text-primary text-center align-middle transition">Properties</a>
+              <a href="property" className="hover:text-primary text-center align-middle transition">Properties</a>
             </li>
           </ul>
         </div>
