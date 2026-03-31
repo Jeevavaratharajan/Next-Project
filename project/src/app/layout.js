@@ -1,14 +1,14 @@
-import Header from "@/components/Header/header";
+import AppShell from "@/components/layout/AppShell";
+import StoreProvider from "@/providers/StoreProvider";
 import "./globals.css";
-import Footer from "@/components/Footer/footer";
 
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer/>
+        <StoreProvider>
+          <AppShell>{children}</AppShell>
+        </StoreProvider>
       </body>
     </html>
   );
