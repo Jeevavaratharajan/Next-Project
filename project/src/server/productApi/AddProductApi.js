@@ -1,20 +1,12 @@
-const { AxiosApi } = require("@/axios")
-const { CREATE_PRODUCT, GET_PRODUCTS, GET_PRODUCT_BY_NAME } = require("@/helper");
-const { data } = require("autoprefixer");
+import { AxiosApi } from "@/axios";
+import { PROPERTY_URL } from "@/helper";
 
-const ProductApi =  {
-    create : async(data)=>{
-        return await AxiosApi.post(CREATE_PRODUCT, data);
-    },
+const ProductApi = {
+  create: async (data) => AxiosApi.post(PROPERTY_URL, data),
+  getAll: async (params = {}) => AxiosApi.get(PROPERTY_URL, { params }),
+  getById: async (id) => AxiosApi.get(`${PROPERTY_URL}/${id}`),
+  update: async ({ id, data }) => AxiosApi.patch(`${PROPERTY_URL}/${id}`, data),
+  delete: async (id) => AxiosApi.delete(`${PROPERTY_URL}/${id}`),
+};
 
-    getAll : async()=>{
-        return await AxiosApi.get(GET_PRODUCTS,data);
-    },
-    getByName : async(data)=>{
-        return await AxiosApi.get(`${GET_PRODUCT_BY_NAME},${data.name}`);
-    },
-    delete : async(data)=>{
-        return await AxiosApi.delete(`${GET_PRODUCT_BY_NAME}/${data.name}`);
-    }
-}
 export default ProductApi;
